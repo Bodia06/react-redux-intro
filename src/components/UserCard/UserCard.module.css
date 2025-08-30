@@ -1,0 +1,33 @@
+.UserCardContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.UserCardWrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	cursor: pointer;
+	padding: 20px;
+	background-color: #fff;
+}
+
+.UserCardWrapper.active {
+	border: 1px solid green;
+}
+
+.UserCardWrapper.unactive {
+	border: 1px solid orange;
+}
+
+.UserCardFullName {
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+
+.UserCardText {
+	font-size: 17px;
+}
