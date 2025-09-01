@@ -7,7 +7,7 @@ import { reselectFavourite } from '../../store/slices/userSlices'
 function UserCard({ userInfo, setValueIsFavourite }) {
 	const { firstName, lastName, email, isFavourite } = userInfo
 
-	const stylesUserCardWrapper = classNames(styles.UserCardWrapper, {
+	const stylesUserCardWrapper = classNames(styles.userCardWrapper, {
 		[styles.active]: isFavourite,
 		[styles.unactive]: !isFavourite,
 	})
@@ -17,15 +17,15 @@ function UserCard({ userInfo, setValueIsFavourite }) {
 	}
 
 	return (
-		<div className={styles.UserCardContainer}>
+		<div className={styles.userCardContainer}>
 			<button
 				onClick={reselectFavouriteHandler}
 				className={stylesUserCardWrapper}
 			>
 				<h1
-					className={styles.UserCardFullName}
+					className={styles.userCardFullName}
 				>{`${firstName} ${lastName}`}</h1>
-				<p className={styles.UserCardText}>{email}</p>
+				<p className={styles.userCardText}>{email}</p>
 			</button>
 		</div>
 	)
