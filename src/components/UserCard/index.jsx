@@ -18,7 +18,7 @@ function UserCard({ userInfo, setValueIsFavourite }) {
 
 	return (
 		<div className={styles.userCardContainer}>
-			<button
+			<article
 				onClick={reselectFavouriteHandler}
 				className={stylesUserCardWrapper}
 			>
@@ -26,7 +26,7 @@ function UserCard({ userInfo, setValueIsFavourite }) {
 					className={styles.userCardFullName}
 				>{`${firstName} ${lastName}`}</h1>
 				<p className={styles.userCardText}>{email}</p>
-			</button>
+			</article>
 		</div>
 	)
 }
